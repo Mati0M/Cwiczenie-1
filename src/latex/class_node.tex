@@ -1,0 +1,91 @@
+\doxysection{Node Class Reference}
+\hypertarget{class_node}{}\label{class_node}\index{Node@{Node}}
+
+
+Pojedynczy węzeł listy dwukierunkowej.  
+
+
+
+
+{\ttfamily \#include $<$Node.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_node_a2c5fe4ecef1aa9623d740582b1425c16}{Node}} (int value)
+\begin{DoxyCompactList}\small\item\em Konstruktor tworzący węzeł z daną wartością. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_node_a87c003c9f600e3fc58e6e90835f0b605}{data}}
+\begin{DoxyCompactList}\small\item\em Przechowywana wartość. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_node}{Node}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_node_a632ea91c6a13082308f7692649a68880}{prev}}
+\begin{DoxyCompactList}\small\item\em Wskaźnik na poprzedni węzeł (nullptr, jeśli brak). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_node}{Node}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_node_a2559a716f69ccaa76d648d9f1b83065e}{next}}
+\begin{DoxyCompactList}\small\item\em Wskaźnik na następny węzeł (nullptr, jeśli brak). \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Pojedynczy węzeł listy dwukierunkowej. 
+
+Przechowuje wartość typu int oraz wskaźniki na poprzedni i następny węzeł listy. 
+
+\label{doc-constructors}
+\Hypertarget{class_node_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_node_a2c5fe4ecef1aa9623d740582b1425c16}\index{Node@{Node}!Node@{Node}}
+\index{Node@{Node}!Node@{Node}}
+\doxysubsubsection{\texorpdfstring{Node()}{Node()}}
+{\footnotesize\ttfamily \label{class_node_a2c5fe4ecef1aa9623d740582b1425c16} 
+Node\+::\+Node (\begin{DoxyParamCaption}\item[{int}]{value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Konstruktor tworzący węzeł z daną wartością. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & Wartość zapisywana w węźle. \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-variable-members}
+\Hypertarget{class_node_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_node_a87c003c9f600e3fc58e6e90835f0b605}\index{Node@{Node}!data@{data}}
+\index{data@{data}!Node@{Node}}
+\doxysubsubsection{\texorpdfstring{data}{data}}
+{\footnotesize\ttfamily \label{class_node_a87c003c9f600e3fc58e6e90835f0b605} 
+int Node\+::data}
+
+
+
+Przechowywana wartość. 
+
+\Hypertarget{class_node_a2559a716f69ccaa76d648d9f1b83065e}\index{Node@{Node}!next@{next}}
+\index{next@{next}!Node@{Node}}
+\doxysubsubsection{\texorpdfstring{next}{next}}
+{\footnotesize\ttfamily \label{class_node_a2559a716f69ccaa76d648d9f1b83065e} 
+\mbox{\hyperlink{class_node}{Node}}\texorpdfstring{$\ast$}{*} Node\+::next}
+
+
+
+Wskaźnik na następny węzeł (nullptr, jeśli brak). 
+
+\Hypertarget{class_node_a632ea91c6a13082308f7692649a68880}\index{Node@{Node}!prev@{prev}}
+\index{prev@{prev}!Node@{Node}}
+\doxysubsubsection{\texorpdfstring{prev}{prev}}
+{\footnotesize\ttfamily \label{class_node_a632ea91c6a13082308f7692649a68880} 
+\mbox{\hyperlink{class_node}{Node}}\texorpdfstring{$\ast$}{*} Node\+::prev}
+
+
+
+Wskaźnik na poprzedni węzeł (nullptr, jeśli brak). 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_node_8h}{Node.\+h}}\item 
+\mbox{\hyperlink{_node_8cpp}{Node.\+cpp}}\end{DoxyCompactItemize}

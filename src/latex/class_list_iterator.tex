@@ -1,0 +1,169 @@
+\doxysection{List\+Iterator Class Reference}
+\hypertarget{class_list_iterator}{}\label{class_list_iterator}\index{ListIterator@{ListIterator}}
+
+
+Prosty iterator po liście dwukierunkowej.  
+
+
+
+
+{\ttfamily \#include $<$List\+Iterator.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_list_iterator_ac78c080265da9cd914c72043d1a095b9}{List\+Iterator}} ()=default
+\begin{DoxyCompactList}\small\item\em Tworzy iterator niewskazujący na żaden element. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_list_iterator_a5467366bfe00b98738a45562a6042e8e}{List\+Iterator}} (\mbox{\hyperlink{class_node}{Node}} \texorpdfstring{$\ast$}{*}start)
+\begin{DoxyCompactList}\small\item\em Tworzy iterator ustawiony na dany węzeł. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_list_iterator_aa919f0d681d479273a7af53b2b44e4f9}{is\+Valid}} () const
+\begin{DoxyCompactList}\small\item\em Sprawdza, czy iterator wskazuje na poprawny węzeł. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_list_iterator_a95335732d0705f484da544d560a887c4}{get}} () const
+\begin{DoxyCompactList}\small\item\em Zwraca wartość aktualnego elementu. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_list_iterator_abd93d5f88644a553c8b52a2184c0c1e3}{has\+Next}} () const
+\begin{DoxyCompactList}\small\item\em Sprawdza, czy istnieje następny element. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_list_iterator_ab6d5c37c791d7f568f7758ec5d16af09}{has\+Prev}} () const
+\begin{DoxyCompactList}\small\item\em Sprawdza, czy istnieje poprzedni element. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_list_iterator_a25d476f0dbdfa7d2f119b81040e748a2}{next}} ()
+\begin{DoxyCompactList}\small\item\em Przechodzi do następnego elementu listy. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_list_iterator_a5483e1c29a06ad3913b298ed1052d899}{prev}} ()
+\begin{DoxyCompactList}\small\item\em Przechodzi do poprzedniego elementu listy. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_list_iterator_a8518425fc192346c00bedb825184bcf1}{Doubly\+Linked\+List}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Prosty iterator po liście dwukierunkowej. 
+
+Umożliwia poruszanie się po liście do przodu i do tyłu, oraz odczyt aktualnej wartości. 
+
+\label{doc-constructors}
+\Hypertarget{class_list_iterator_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_list_iterator_ac78c080265da9cd914c72043d1a095b9}\index{ListIterator@{ListIterator}!ListIterator@{ListIterator}}
+\index{ListIterator@{ListIterator}!ListIterator@{ListIterator}}
+\doxysubsubsection{\texorpdfstring{ListIterator()}{ListIterator()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_list_iterator_ac78c080265da9cd914c72043d1a095b9} 
+List\+Iterator\+::\+List\+Iterator (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Tworzy iterator niewskazujący na żaden element. 
+
+\Hypertarget{class_list_iterator_a5467366bfe00b98738a45562a6042e8e}\index{ListIterator@{ListIterator}!ListIterator@{ListIterator}}
+\index{ListIterator@{ListIterator}!ListIterator@{ListIterator}}
+\doxysubsubsection{\texorpdfstring{ListIterator()}{ListIterator()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_list_iterator_a5467366bfe00b98738a45562a6042e8e} 
+List\+Iterator\+::\+List\+Iterator (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_node}{Node}} \texorpdfstring{$\ast$}{*}}]{start}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Tworzy iterator ustawiony na dany węzeł. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em start} & Wskaźnik na węzeł, od którego rozpoczyna się iteracja. \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{class_list_iterator_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_list_iterator_a95335732d0705f484da544d560a887c4}\index{ListIterator@{ListIterator}!get@{get}}
+\index{get@{get}!ListIterator@{ListIterator}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily \label{class_list_iterator_a95335732d0705f484da544d560a887c4} 
+int List\+Iterator\+::get (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Zwraca wartość aktualnego elementu. 
+
+\begin{DoxyReturn}{Returns}
+Wartość typu int przechowywana w węźle. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::out\+\_\+of\+\_\+range} & jeśli iterator nie wskazuje na żaden element. \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_list_iterator_abd93d5f88644a553c8b52a2184c0c1e3}\index{ListIterator@{ListIterator}!hasNext@{hasNext}}
+\index{hasNext@{hasNext}!ListIterator@{ListIterator}}
+\doxysubsubsection{\texorpdfstring{hasNext()}{hasNext()}}
+{\footnotesize\ttfamily \label{class_list_iterator_abd93d5f88644a553c8b52a2184c0c1e3} 
+bool List\+Iterator\+::has\+Next (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Sprawdza, czy istnieje następny element. 
+
+\begin{DoxyReturn}{Returns}
+true jeśli istnieje węzeł po prawej stronie. 
+\end{DoxyReturn}
+\Hypertarget{class_list_iterator_ab6d5c37c791d7f568f7758ec5d16af09}\index{ListIterator@{ListIterator}!hasPrev@{hasPrev}}
+\index{hasPrev@{hasPrev}!ListIterator@{ListIterator}}
+\doxysubsubsection{\texorpdfstring{hasPrev()}{hasPrev()}}
+{\footnotesize\ttfamily \label{class_list_iterator_ab6d5c37c791d7f568f7758ec5d16af09} 
+bool List\+Iterator\+::has\+Prev (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Sprawdza, czy istnieje poprzedni element. 
+
+\begin{DoxyReturn}{Returns}
+true jeśli istnieje węzeł po lewej stronie. 
+\end{DoxyReturn}
+\Hypertarget{class_list_iterator_aa919f0d681d479273a7af53b2b44e4f9}\index{ListIterator@{ListIterator}!isValid@{isValid}}
+\index{isValid@{isValid}!ListIterator@{ListIterator}}
+\doxysubsubsection{\texorpdfstring{isValid()}{isValid()}}
+{\footnotesize\ttfamily \label{class_list_iterator_aa919f0d681d479273a7af53b2b44e4f9} 
+bool List\+Iterator\+::is\+Valid (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Sprawdza, czy iterator wskazuje na poprawny węzeł. 
+
+\begin{DoxyReturn}{Returns}
+true jeśli aktualny węzeł nie jest nullptr. 
+\end{DoxyReturn}
+\Hypertarget{class_list_iterator_a25d476f0dbdfa7d2f119b81040e748a2}\index{ListIterator@{ListIterator}!next@{next}}
+\index{next@{next}!ListIterator@{ListIterator}}
+\doxysubsubsection{\texorpdfstring{next()}{next()}}
+{\footnotesize\ttfamily \label{class_list_iterator_a25d476f0dbdfa7d2f119b81040e748a2} 
+void List\+Iterator\+::next (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Przechodzi do następnego elementu listy. 
+
+Jeżeli aktualny węzeł jest nullptr, nic się nie dzieje. \Hypertarget{class_list_iterator_a5483e1c29a06ad3913b298ed1052d899}\index{ListIterator@{ListIterator}!prev@{prev}}
+\index{prev@{prev}!ListIterator@{ListIterator}}
+\doxysubsubsection{\texorpdfstring{prev()}{prev()}}
+{\footnotesize\ttfamily \label{class_list_iterator_a5483e1c29a06ad3913b298ed1052d899} 
+void List\+Iterator\+::prev (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Przechodzi do poprzedniego elementu listy. 
+
+Jeżeli aktualny węzeł jest nullptr, nic się nie dzieje. 
+
+\label{doc-related-members}
+\Hypertarget{class_list_iterator_doc-related-members}
+\doxysubsection{Friends And Related Symbol Documentation}
+\Hypertarget{class_list_iterator_a8518425fc192346c00bedb825184bcf1}\index{ListIterator@{ListIterator}!DoublyLinkedList@{DoublyLinkedList}}
+\index{DoublyLinkedList@{DoublyLinkedList}!ListIterator@{ListIterator}}
+\doxysubsubsection{\texorpdfstring{DoublyLinkedList}{DoublyLinkedList}}
+{\footnotesize\ttfamily \label{class_list_iterator_a8518425fc192346c00bedb825184bcf1} 
+friend class \mbox{\hyperlink{class_doubly_linked_list}{Doubly\+Linked\+List}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_list_iterator_8h}{List\+Iterator.\+h}}\item 
+\mbox{\hyperlink{_list_iterator_8cpp}{List\+Iterator.\+cpp}}\end{DoxyCompactItemize}

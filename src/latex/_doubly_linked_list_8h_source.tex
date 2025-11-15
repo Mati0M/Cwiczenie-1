@@ -1,0 +1,48 @@
+\doxysection{Doubly\+Linked\+List.\+h}
+\hypertarget{_doubly_linked_list_8h_source}{}\label{_doubly_linked_list_8h_source}\mbox{\hyperlink{_doubly_linked_list_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_node_8h}{Node.h}}"{}}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_list_iterator_8h}{ListIterator.h}}"{}}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00023\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_doubly_linked_list_a64b759ca82ca4b7767f42ba5691575f5}{DoublyLinkedList}}\ \{}
+\DoxyCodeLine{00024\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00028\ \ \ \ \ \mbox{\hyperlink{class_doubly_linked_list_a64b759ca82ca4b7767f42ba5691575f5}{DoublyLinkedList}}();}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00033\ \ \ \ \ \mbox{\hyperlink{class_doubly_linked_list_abe3231c8ee3dd956b5261c4148102967}{\string~DoublyLinkedList}}();}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_doubly_linked_list_af28eb92e33796b26dfb5acbd9cecdab3}{push\_front}}(\textcolor{keywordtype}{int}\ value);}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_doubly_linked_list_a622fa6990e1592cad401965d8026d5c5}{push\_back}}(\textcolor{keywordtype}{int}\ value);}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_doubly_linked_list_a05c072c5e4b089d88c32f384e8a2c19a}{insert\_at}}(\textcolor{keywordtype}{int}\ index,\ \textcolor{keywordtype}{int}\ value);}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00063\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_doubly_linked_list_ab725391e871e09589d43d5e14bf31f1f}{pop\_front}}();}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00070\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_doubly_linked_list_af19e6917cc36d7cd01eb31a0ca8d07cf}{pop\_back}}();}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00077\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_doubly_linked_list_a6efc3cb080f515f65fff3fb8ab601f89}{remove\_at}}(\textcolor{keywordtype}{int}\ index);}
+\DoxyCodeLine{00078\ }
+\DoxyCodeLine{00084\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_doubly_linked_list_a4e75d2abb520b19fbfc985ad0fc83d83}{print\_forward}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00085\ }
+\DoxyCodeLine{00091\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_doubly_linked_list_ad0707fb48c8bde692ccf5e97cb67df8f}{print\_backward}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00092\ }
+\DoxyCodeLine{00098\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_doubly_linked_list_a721a85d80d21942c74a5b834f8e1d08b}{clear}}();}
+\DoxyCodeLine{00099\ }
+\DoxyCodeLine{00104\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_doubly_linked_list_ab2a2a369f59f56c8f320cbcb0bda47a4}{empty}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00105\ }
+\DoxyCodeLine{00110\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_doubly_linked_list_aeaf0fe74af4d4e0327ce9b0039e72ca1}{size}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00111\ }
+\DoxyCodeLine{00116\ \ \ \ \ \mbox{\hyperlink{class_list_iterator}{ListIterator}}\ \mbox{\hyperlink{class_doubly_linked_list_aa5a6a77d0acdc7e1f931e7e8bc8858cb}{begin}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00117\ }
+\DoxyCodeLine{00122\ \ \ \ \ \mbox{\hyperlink{class_list_iterator}{ListIterator}}\ \mbox{\hyperlink{class_doubly_linked_list_a938e51826fea49387b16a013385e3bcc}{rbegin}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00123\ }
+\DoxyCodeLine{00124\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00125\ \ \ \ \ \mbox{\hyperlink{class_node}{Node}}*\ head;\ \ \ }
+\DoxyCodeLine{00126\ \ \ \ \ \mbox{\hyperlink{class_node}{Node}}*\ tail;\ \ \ }
+\DoxyCodeLine{00127\ \ \ \ \ \textcolor{keywordtype}{int}\ length;\ \ \ }
+\DoxyCodeLine{00128\ \};}
+
+\end{DoxyCode}

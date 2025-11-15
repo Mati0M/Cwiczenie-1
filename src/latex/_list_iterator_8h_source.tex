@@ -1,0 +1,33 @@
+\doxysection{List\+Iterator.\+h}
+\hypertarget{_list_iterator_8h_source}{}\label{_list_iterator_8h_source}\mbox{\hyperlink{_list_iterator_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ <stdexcept>}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_node_8h}{Node.h}}"{}}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_list_iterator_ac78c080265da9cd914c72043d1a095b9}{ListIterator}}\ \{}
+\DoxyCodeLine{00018\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00022\ \ \ \ \ \mbox{\hyperlink{class_list_iterator_ac78c080265da9cd914c72043d1a095b9}{ListIterator}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_list_iterator_ac78c080265da9cd914c72043d1a095b9}{ListIterator}}(\mbox{\hyperlink{class_node}{Node}}*\ start);}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_list_iterator_aa919f0d681d479273a7af53b2b44e4f9}{isValid}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_list_iterator_a95335732d0705f484da544d560a887c4}{get}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_list_iterator_abd93d5f88644a553c8b52a2184c0c1e3}{hasNext}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_list_iterator_ab6d5c37c791d7f568f7758ec5d16af09}{hasPrev}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00060\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_list_iterator_a25d476f0dbdfa7d2f119b81040e748a2}{next}}();}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00067\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_list_iterator_a5483e1c29a06ad3913b298ed1052d899}{prev}}();}
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00069\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00070\ \ \ \ \ \mbox{\hyperlink{class_node}{Node}}*\ current\{\textcolor{keyword}{nullptr}\};\ }
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00072\ \ \ \ \ \textcolor{keyword}{friend}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_list_iterator_a8518425fc192346c00bedb825184bcf1}{DoublyLinkedList}};}
+\DoxyCodeLine{00073\ \};}
+
+\end{DoxyCode}
